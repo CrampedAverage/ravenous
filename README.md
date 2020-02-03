@@ -1,3 +1,7 @@
+# Ravenous
+This is my first time using react hooks and fetching api. This is a business search application which takes in your business search and location and gives you a list of business inclusing their information.
+Click [here](https://lucid-noyce-84fd90.netlify.com/) to try
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
