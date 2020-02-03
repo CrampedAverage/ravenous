@@ -7,7 +7,7 @@ const Business = ({ business }) => {
             <div className="image-container">
                 <img src={business.imageSrc} alt=''/>
             </div>
-            <h2><a class='business-link' target='_blank' href={business.link}>{business.name}</a></h2>
+            <h2><a class='business-link' target='_blank' rel="noopener noreferrer" href={business.link}>{business.name}</a></h2>
             <div className="Business-information">
             <div className="Business-address">
                 <p>{business.address}</p>
