@@ -1,4 +1,6 @@
-const apiKey = 'ONjcE4Ebbi1VenYgWkfwWkaLbrjYcJh4Q8MJs5B2MST8ZkIMICP6nsflf0EgFhi0d0WvKiWq1ZBu2kvGnDPUMRbrBrXVZld1YXI1lCPRQ9n-KHS_BHzYx3-QRdQxXnYx'
+import {API_KEY} from '../env'
+
+const apiKey = API_KEY
 
 const Yelp = {
     search: async (term, location, sortBy) => {
@@ -13,7 +15,7 @@ const Yelp = {
             if (myJson.businesses) {
                 return myJson.businesses.map(business => {
                     return {
-                         id: business.id,
+                        id: business.id,
                         imageSrc: business.image_url,
                         name: business.name,
                         address: business.location.address1,
