@@ -1,4 +1,6 @@
-const apiKey = process.env.REACT_APP_API_KEY
+import { hiddenApiKey } from "./apiKey"
+
+const apiKey = hiddenApiKey || process.env.REACT_APP_API_KEY
 
 const Yelp = {
     search: async (term, location, sortBy) => {
@@ -8,6 +10,7 @@ const Yelp = {
                 Authorization: `Bearer ${apiKey}`
             }
         }).then(response => {
+            console.log(response)
             return response.json()
         }).then (myJson => {
             if (myJson.businesses) {
