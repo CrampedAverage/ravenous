@@ -1,6 +1,4 @@
-import { hiddenApiKey } from "./apiKey"
-
-const apiKey = hiddenApiKey || process.env.REACT_APP_API_KEY
+const apiKey = process.env.REACT_APP_API_KEY
 
 const Yelp = {
     search: async (term, location, sortBy) => {
